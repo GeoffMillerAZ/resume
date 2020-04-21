@@ -1,0 +1,211 @@
+# Page settings
+
+baseurl = "https://www.GeoffMiller.pro"
+languageCode = "en-us"
+title = "Geoff Miller Resume"
+theme = "hugo-orbit-theme-geoff"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Geoff Miller Resume"
+    author = "Geoff Miller"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-6.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Geoff Miller"
+        tagline = "Cloud Architect"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: geoff.e.miller@gmail.com"
+        title = "geoff.e.miller@gmail.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//www.linkedin.com/in/geoff-miller-4630791"
+        title = "Geoff on LinkedIn"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/GeoffMillerAZ"
+        title = "github.com/GeoffMillerAZ"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "MS in Computer Science"
+        college = "Northern Illinois University"
+        dates = "2013 - 2015"
+
+        [[params.education.list]]
+        degree = "BS in Computer Science"
+        college = "Northern Illinois University"
+        dates = "2010 - 2013"
+
+    # Languages section
+    [params.language]
+        enable = false
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Native"
+
+    # Interests section
+    [params.interests]
+        enable = false
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Latin Dance"
+
+        [[params.interests.list]]
+        interest = "Robots"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**Summarise your career here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Director Of Infrastructure"
+        dates = "Oct 2017 - Present"
+        company = "REPAY"
+        details = "asdf "
+
+        [[params.jobs.list]]
+        position = "DevOps Engineer"
+        dates = "Jan 2017 - Oct 2017"
+        company = "Early Warning"
+        details = ""
+
+        [[params.jobs.list]]
+        position = "AWS Systems Engineer"
+        dates = "2016-2017"
+        company = "ThinkVine"
+        details = ""
+
+        [[params.jobs.list]]
+        position = "Lead DevOps Engineer"
+        dates = "2016-2016"
+        company = "OWNZONES Media Network"
+        details = ""
+
+        [[params.jobs.list]]
+        position = "Applications Developer"
+        dates = "2015-2016"
+        company = "Arizona Department of Administration"
+        details = ""
+
+        [[params.jobs.list]]
+        position = "Graduate Assistant - Computer Science"
+        dates = "2012 - 2015"
+        company = "Northern Illinois University"
+        details = ""
+
+        [[params.jobs.list]]
+        position = "Mainframe Technical Analyst Intern"
+        dates = "2013 & 2014"
+        company = "Bank of America"
+        details = ""
+
+        [[params.jobs.list]]
+        position = "Systems Administration, Helpdesk & Desktop Repair"
+        dates = "2001 - 2010"
+        company = "Several"
+        details = "Universal Technical Institute, J-Curve Technologies, Bank of America, Geek Squad, National Support Center"
+
+    # Projects section
+    [params.projects]
+        enable = false
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**You can list your side projects or open source libraries in this section.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus"
+
+        [[params.projects.list]]
+        title = "Hugrid"
+        url = "https://github.com/aerohub/hugrid"
+        tagline = "Grid theme for Hugo. It's a kind of boilerplate to perform anyone or anything quickly. Portfolio, collection, bookmarks, contacts and so on"
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Infrastructure Architecture"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Infrastructure Cost Management"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "AWS"
+        level = "98%"
+
+        [[params.skills.list]]
+        skill = "Kubernetes"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Infrastructure Team Management, Development & Building"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "Infra As Code: Packer, Terraform, Pulumi"
+        level = "99%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
